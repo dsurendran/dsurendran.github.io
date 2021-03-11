@@ -49,13 +49,13 @@ Current context can be retrived from ```$HOME/.kube/config```
 To see the current context
 
 ```console
-kubectl config get-contexts
+kubectx
 ```
 
 We can switch the contexts by
 
 ```console 
-kubectl config use-context multinode-demo
+kubectx multinode-demo
 ```
 
 # Pods
@@ -99,3 +99,10 @@ kubectl logs dashboard-metrics-scraper-7b59f7d4df-8pp7q
 ```
 
 
+switch namespaces - ```kubectx <namespace>```
+
+Port forwarding
+
+```console
+kubectl port-forward <pod-name> local-port:remote-port
+```
